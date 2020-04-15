@@ -41,19 +41,19 @@
 				<li class="service-item">
 					<h3>Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a href="contacts.html" class="btn">Заказать</a>
+					<a href="contacts.html" class="btn order-btn">Заказать</a>
 					<img src="img/service-image-1.png" alt=" Заказать дизайн веб-сайта" class="service-image">
 				</li>
 				<li class="service-item">
 					<h3>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a href="contacts.html" class="btn">Заказать</a>
+					<a href="contacts.html" class="btn order-btn">Заказать</a>
 					<img src="img/service-image-2.png" alt=" Заказать дизайн приложения" class="service-image">
 				</li>
 				<li class="service-item">
 					<h3>Презентации</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a href="contacts.html" class="btn">Заказать</a>
+					<a href="contacts.html" class="btn order-btn">Заказать</a>
 					<img src="img/service-image-3.png" alt=" Заказать презентацию" class="service-image">
 				</li>
 			</ul>
@@ -117,8 +117,23 @@
 
 	<section class="modal modal-write-us">
 		<h2>Напишите нам</h2>
-		<!-- Здесь будет форма -->
-		<span>X</span>
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+			<p>
+				<label for="write-us-name">Ваше имя:</label>
+				<input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="write-us-email">Ваш e-mail:</label>
+				<input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="write-us-comment">Текст письма:</label>
+				<textarea id="write-us-comment" name="comment" placeholder="В свободной форме" rows="5" cols="70"></textarea>
+			</p>
+			<p>
+				<button type="submit" class="btn send-btn">Отправить</button>
+			</p>
+		</form>
 	</section>
 	
 </body>
