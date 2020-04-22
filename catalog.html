@@ -28,56 +28,109 @@
 
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			
+			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+					<legend>Стоимость:</legend>
+					<input class="filter-price-range filter-price-range-slider" type="range" name="price-range" id="price-range-slider">
+					<label for="price-range-bottom">От</label>
+					<input class="filter-price-range filter-price-range-text" type="text" name="price-range-bottom" id="price-range-bottom" value="0">
+					<label for="price-range-top">До</label>
+					<input class="filter-price-range filter-price-range-text" type="text" name="price-range-top" id="price-range-top" value="15000">
+				</fieldset>
+				<fieldset>
+					<legend>Сетка:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type" id="filter-grid-adaptive" value="adaptive">
+							<label for="filter-grid-adaptive">Адаптивная</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type" id="filter-grid-static" value="static">
+							<label for="filter-grid-static">Фиксированная</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type" id="filter-grid-liquid" value="liquid">
+							<label for="filter-grid-liquid">Резиновая</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-features-slider">
+							<label for="filter-features-slider">Слайдер</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages-block" id="filter-features-advantages-block">
+							<label for="filter-features-advantages-block">Блок преимуществ</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-features-news">
+							<label for="filter-features-news">Новости</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-features-gallery">
+							<label for="filter-features-gallery">Галерея</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="shopping-cart" id="filter-features-shopping-cart">
+							<label for="filter-features-shopping-cart">Корзина</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="btn filter-btn" type="submit">Показать</button>
+			</form>
 		</section>
 
 		<section class="sort">
 			<h2 class="visually-hidden">Сортировка товаров</h2>
 			<b>Сортировать:</b>
-			<input type="button" value="По цене">
-			<input type="button" value="По типу">
-			<input type="button" value="По названию">
-			<img src="" alt="Up">
-			<img src="" alt="Down">
+			<a class="sort-type" href="#">По цене</a>
+			<a class="sort-type" href="#">По типу</a>
+			<a class="sort-type" href="#">По названию</a>
+			<a class="sort-ascending" href="#"><img src="img/svg/icon-down-dir.svg" alt="По возрастанию"></a>
+			<a class="sort-descending" href="#"><img src="img/svg/icon-up-dir.svg" alt="По убыванию"></a>
 		</section>
 
 		<section class="catalog">
 			<h2 class="visually-hidden">Список шаблонов</h2>
+			<!-- Add hover state to catalog-items -->
 			<ul class="templates-list">
 				<li class="template-item">
 					<a href="template-item.html">
-						<img src="" alt="" class="browser-icon">
-						<img src="" alt="Sedona" class="template-image">
+						<img src="img/svg/browser.svg" alt="" class="browser-icon">
+						<img src="img/img-sedona.jpg" alt="Sedona" class="template-image">
 					</a>
 				</li>
 				<li class="template-item">
 					<a href="template-item.html">
-						<img src="" alt="" class="browser-icon">
-						<img src="" alt="PINK" class="template-image">
+						<img src="img/svg/browser.svg" alt="" class="browser-icon">
+						<img src="img/img-pink.jpg" alt="PINK" class="template-image">
 					</a>
 				</li>
 				<li class="template-item">
 					<a href="template-item.html">
-						<img src="" alt="" class="browser-icon">
-						<img src="" alt="Barbershop Borodinski" class="template-image">
+						<img src="img/svg/browser.svg" alt="" class="browser-icon">
+						<img src="img/img-barbershop.jpg" alt="Barbershop Borodinski" class="template-image">
 					</a>
 				</li>
 				<li class="template-item">
 					<a href="template-item.html">
-						<img src="" alt="" class="browser-icon">
-						<img src="" alt="Mishka" class="template-image">
+						<img src="img/svg/browser.svg" alt="" class="browser-icon">
+						<img src="img/img-mishka.jpg" alt="Mishka" class="template-image">
 					</a>
 				</li>
 				<li class="template-item">
 					<a href="template-item.html">
-						<img src="" alt="" class="browser-icon">
-						<img src="" alt="A plus" class="template-image">
+						<img src="img/svg/browser.svg" alt="" class="browser-icon">
+						<img src="img/img-aplus.jpg" alt="A plus" class="template-image">
 					</a>
 				</li>
 				<li class="template-item">
 					<a href="template-item.html">
-						<img src="" alt="" class="browser-icon">
-						<img src="" alt="Kvast" class="template-image">
+						<img src="img/svg/browser.svg" alt="" class="browser-icon">
+						<img src="img/img-kvast.jpg" alt="Kvast" class="template-image">
 					</a>
 				</li>
 			</ul>
