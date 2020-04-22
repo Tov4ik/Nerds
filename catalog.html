@@ -101,6 +101,8 @@
 				<a href="#" class="btn write-us-btn">Напишите нам</a>
 			</div>
 			<!-- Здесь будет карта -->
+			<img src="img/map-image.jpg" alt="Карта">
+			<img src="img/map-marker.png" alt="Маркер адресса">
 		</section>
 	</main>
 
@@ -115,8 +117,24 @@
 
 	<section class="modal modal-write-us">
 		<h2>Напишите нам</h2>
-		<!-- Здесь будет форма -->
-		<span>X</span>
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+			<p>
+				<label for="write-us-name">Ваше имя:</label>
+				<input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="write-us-email">Ваш e-mail:</label>
+				<input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="write-us-comment">Текст письма:</label>
+				<textarea id="write-us-comment" name="comment" placeholder="В свободной форме" rows="5" cols="70"></textarea>
+			</p>
+			<p>
+				<button type="submit" class="btn send-btn">Отправить</button>
+			</p>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 
 </body>
